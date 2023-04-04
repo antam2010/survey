@@ -1,4 +1,4 @@
-package com.daeho.survey.config;
+package com.daeho.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

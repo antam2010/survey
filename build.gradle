@@ -25,6 +25,13 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 	implementation 'org.webjars:swagger-ui:3.52.1'
 
+	// log4j 취약점 업데이트
+	implementation 'org.apache.logging.log4j:log4j-api:2.18.0'
+	implementation 'org.apache.logging.log4j:log4j-core:2.18.0'
+	implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.18.0'
+
+	// Maria DB
+	implementation 'org.mariadb.jdbc:mariadb-java-client:3.0.6'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'

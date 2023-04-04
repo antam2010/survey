@@ -1,6 +1,28 @@
 spring:
+  application:
+    name: survey
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
 
-springdoc.swagger-ui.path: /api-document.html
+# 서버 포트
+server:
+  port: 8080
+
+# 데이터베이스 설정
+  datasource:
+    url: jdbc:log4jdbc:mariadb://localhost:3307/dhdiarycom
+    username: root
+    password: ''
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    idle-timeout: 600000
+    max-lifetime: 300000
+    auto-commit: true
+    minimumIdle: 1
+    maximumPoolSize: 1
+
+# 로깅 설정
+logging:
+  level:
+    root: info
+
