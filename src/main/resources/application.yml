@@ -11,8 +11,8 @@ server:
 
 # 데이터베이스 설정
   datasource:
-    url: jdbc:log4jdbc:mariadb://localhost:3307/dhdiarycom
-    username: root
+    url: jdbc:log4jdbc:mariadb://183.111.138.201:3306/antam2011
+    username: ''
     password: ''
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     idle-timeout: 600000
