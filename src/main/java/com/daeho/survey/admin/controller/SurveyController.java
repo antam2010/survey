@@ -1,4 +1,4 @@
-package com.daeho.survey.controller;
+package com.daeho.survey.admin.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ public class SurveyController {
 
     @GetMapping("")
 
-    public ResponseEntity getSurveyList() {
+    public ResponseEntity list() {
         System.out.println("HI");
         return new ResponseEntity(HttpStatus.OK);
     }
