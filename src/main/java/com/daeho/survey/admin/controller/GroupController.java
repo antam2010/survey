@@ -27,7 +27,7 @@ public class GroupController {
     public ResponseEntity add(@ModelAttribute GroupDTO dto) {
         log.info("## api/v1/group : add()");
         log.info("## data = " + dto);
-        ResponseEntity result =  new ResponseEntity(HttpStatus.OK);
+        ResponseEntity result =  new ResponseEntity(groupService.addGroup(), HttpStatus.OK);
         return result;
     }
 }
